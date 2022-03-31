@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bao.example.englishapp.controller.WordController">
+   <children>
+      <Label layoutX="45.0" layoutY="33.0" text="Danh sách từ vựng" />
+      <Label fx:id="lbListWord" layoutX="45.0" layoutY="73.0" />
+      <TableView id="tblWord" layoutX="45.0" layoutY="100.0" prefHeight="291.0" prefWidth="539.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

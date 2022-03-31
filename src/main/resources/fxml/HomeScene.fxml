@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bao.example.englishapp.controller.HomeController">
+   <children>
+      <JFXButton layoutX="325.0" layoutY="126.0" onAction="#toAdminScene" prefHeight="25.0" prefWidth="133.0" text="Quản lý" />
+      <JFXButton layoutX="325.0" layoutY="175.0" onAction="#toLearnCollection" prefHeight="25.0" prefWidth="133.0" text="Học tập" />
+      <JFXButton layoutX="325.0" layoutY="279.0" onAction="#toExit" prefHeight="25.0" prefWidth="133.0" text="Thoát" />
+      <JFXButton layoutX="325.0" layoutY="223.0" onAction="#toReviewCollection" prefHeight="25.0" prefWidth="133.0" text="Kiểm tra" />
+   </children>
+</AnchorPane>

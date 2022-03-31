@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="442.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bao.example.englishapp.controller.ReviewCollectionController">
+   <children>
+      <AnchorPane prefHeight="86.0" prefWidth="442.0" style="-fx-background-color: white;">
+         <children>
+            <StackPane fx:id="stackPaneClock" layoutX="14.0" layoutY="6.0" prefHeight="75.0" prefWidth="75.0" />
+            <Label fx:id="lbNumberQuestion" layoutX="173.0" layoutY="26.0" text="Câu 1/20" textFill="#6c6d79">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="92.0" prefHeight="243.0" prefWidth="442.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lbQuestion" layoutX="24.0" layoutY="23.0" text="Câu hỏi" textFill="#6c6d79">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="resultA" layoutX="24.0" layoutY="75.0" text="A">
+               <toggleGroup>
+                  <ToggleGroup fx:id="answer" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="resultC" layoutX="271.0" layoutY="75.0" text="C" toggleGroup="$answer" />
+            <JFXRadioButton fx:id="resultB" layoutX="25.0" layoutY="117.0" text="B" toggleGroup="$answer" />
+            <JFXRadioButton fx:id="resultD" layoutX="271.0" layoutY="117.0" text="D" toggleGroup="$answer" />
+            <JFXButton fx:id="btnStartReview" onAction="#startReview" layoutX="177.0" layoutY="190.0" style="-fx-border-radius: 70%; -fx-border-color: green;" text="Bắt đầu" textFill="#3f8333">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

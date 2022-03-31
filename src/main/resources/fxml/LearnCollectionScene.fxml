@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bao.example.englishapp.controller.LearnCollectionController">
+   <children>
+      <VBox fx:id="detailWordBox" alignment="TOP_CENTER" layoutX="136.0" layoutY="14.0" prefHeight="200.0" prefWidth="220.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/09a614c.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbTiengAnh" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="150.0" text="Apple">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbCachDoc" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="150.0" text="ˈapəl">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="lbTiengViet" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="150.0" text="Táo">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <JFXButton layoutX="14.0" layoutY="188.0" onAction="#loadPreWord" text="Trước" />
+      <JFXButton layoutX="407.0" layoutY="188.0" onAction="#loadNextWord" text="Sau" />
+      <JFXButton layoutX="220.0" layoutY="361.0" onAction="#save" text="Lưu" />
+   </children>
+</AnchorPane>

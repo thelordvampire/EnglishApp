@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bao.example.englishapp.controller.UserController">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="25.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/pre1.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="432.0" layoutY="511.0" text="Học" />
+      <JFXButton layoutX="577.0" layoutY="511.0" onAction="#toReviewCollection" text="Kiểm tra" />
+   </children>
+</AnchorPane>

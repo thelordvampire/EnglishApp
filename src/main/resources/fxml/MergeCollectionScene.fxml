@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="368.0" prefWidth="452.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+fx:controller="bao.example.englishapp.controller.MergeCollectionController">
+   <children>
+      <Label layoutX="55.0" layoutY="191.0" prefHeight="35.0" prefWidth="95.0" text="Tên mới" textFill="#3239b2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="newColName" layoutX="170.0" layoutY="196.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label layoutX="55.0" layoutY="53.0" text="Chủ đề 1" textFill="#3239b2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="120.0" text="Chủ đề 2" textFill="#3239b2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cbListCol1" focusColor="#3239b2" layoutX="170.0" layoutY="58.0" prefHeight="25.0" prefWidth="196.0" />
+      <JFXComboBox fx:id="cbListCol2" focusColor="#3239b2" layoutX="170.0" layoutY="125.0" prefHeight="25.0" prefWidth="196.0" />
+      <JFXButton onAction="#mergeCollection" layoutX="166.0" layoutY="282.0" prefHeight="51.0" prefWidth="120.0" text="Gộp" textFill="#3239b2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutY="270.0" prefHeight="6.0" prefWidth="452.0" />
+   </children>
+</AnchorPane>
